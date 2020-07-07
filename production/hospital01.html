@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>数据统计平台 | UAIS</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+	<!-- Datatables -->
+    
+    <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- NProgress -->
+	<link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+	<!-- iCheck -->
+	<link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+	
+	<!-- bootstrap-progressbar -->
+	<link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+	<!-- JQVMap -->
+	<link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+	<!-- bootstrap-daterangepicker -->
+	<link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+	
+	<!-- Custom Theme Style -->
+	<link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><span>UAIS数据集统计平台</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>上次更新时间</span>
+                <h2>2020.07.03 14:00</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>by 533</h3>
+                <ul class="nav side-menu">
+                    <li><a><i class="fa fa-home"></i> 主页 <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="index.html">数据总览</a></li>
+                        <li><a href="index.html">平台介绍</a></li>
+                      </ul>
+                    </li>
+                    <li><a><i class="fa fa-edit"></i> 医院站点 <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                	  <li><a href="hospital01.html">天水三院_军口</a></li>
+                	  <li><a href="hospital02.html">省二院_军口</a></li>
+                	  <li><a href="hospital03.html">广元_军口</a></li>
+                	  <li><a href="hospital04.html">湘雅二院_军口</a></li>
+                	  <li><a href="hospital05.html">北大六院_军口</a></li>
+                	  <li><a href="hospital06.html">上精卫_军口</a></li>
+                	  <li><a href="hospital07.html">天水三院_973</a></li>
+                	  <li><a href="hospital08.html">北京安定_973</a></li>
+                      </ul>
+                    </li>
+                	<li><a><i class="fa fa-edit"></i> 部队数据 <span class="fa fa-chevron-down"></span></a>
+                	  <ul class="nav child_menu">
+                	  <li><a href="hospital10.html">北京10月</a></li>
+                	  <li><a href="hospital11.html">沈阳11月</a></li>
+                	  </ul>
+                	</li>
+                	<li><a><i class="fa fa-edit"></i> 单组使用 <span class="fa fa-chevron-down"></span></a>
+                	  <ul class="nav child_menu">
+                	  <li><a href="hospital12.html">重点项目_李小伟组</a></li>
+                	  <li><a href="hospital13.html">单车数据_蔡涵书组</a></li>
+                	  <li><a href="hospital14.html">成瘾数据_赵庆林组</a></li>
+                	  </ul>
+                	</li>
+                </ul>
+                </div>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+            <div class="nav_menu">
+                <div class="nav toggle">
+                  <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                </div>
+                <nav class="nav navbar-nav">
+                <ul class=" navbar-right">
+                  <li class="nav-item dropdown open" style="padding-left: 15px;">
+                    <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                      <img src="images/img.jpg" alt="">杨正武
+                    </a>
+                    <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item"  href="javascript:;"> 个人信息</a>
+                        <a class="dropdown-item"  href="javascript:;">
+                          <span class="badge bg-red pull-right">统计负责人</span>
+                          <span>职责</span>
+                        </a>
+                    <a class="dropdown-item"  href="javascript:;">联系:15273134592</a>
+                      <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> 退出</a>
+                    </div>
+                  </li>
+  
+                  <li role="presentation" class="nav-item dropdown open">
+                    <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
+                      <i class="fa fa-envelope-o"></i>
+                      <span class="badge bg-green">1</span>
+                    </a>
+                    <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>杨正武</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            省二院有新一批数据到达，质量检查完毕后请及时统计信息并备份数据！
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          
+			<div class="row">
+				<div class="col-md-4 col-sm-4 ">
+				  <div class="x_panel tile fixed_height_320 overflow_hidden">
+					<div class="x_title">
+					  <h2>数据总览</h2>
+					  <ul class="nav navbar-right panel_toolbox">
+						<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+						</li>
+						<li class="dropdown">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+						  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							  <a class="dropdown-item" href="#">Settings 1</a>
+							  <a class="dropdown-item" href="#">Settings 2</a>
+							</div>
+						</li>
+						<li><a class="close-link"><i class="fa fa-close"></i></a>
+						</li>
+					  </ul>
+					  <div class="clearfix"></div>
+					</div>
+					<div class="x_content">
+					  <table class="" style="width:100%">
+						<tr>
+						  <th style="width:37%;">
+							<p>分布</p>
+						  </th>
+						  <th>
+							<div class="col-lg-7 col-md-7 col-sm-7 ">
+							  <p class="">类型</p>
+							</div>
+							<div class="col-lg-5 col-md-5 col-sm-5 ">
+							  <p class="">数目</p>
+							</div>
+						  </th>
+						</tr>
+						<tr>
+						  <td>
+							<canvas class="canvasDoughnut" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
+						  </td>
+						  <td>
+							<table class="tile_info">
+							  <tr>
+								<td>
+								  <p><i class="fa fa-square blue"></i>正常 </p>
+								</td>
+								<td>30%</td>
+							  </tr>
+							  <tr>
+								<td>
+								  <p><i class="fa fa-square green"></i>抑郁 </p>
+								</td>
+								<td>10%</td>
+							  </tr>
+							  <tr>
+								<td>
+								  <p><i class="fa fa-square purple"></i>双向 </p>
+								</td>
+								<td>20%</td>
+							  </tr>
+							  <tr>
+								<td>
+								  <p><i class="fa fa-square aero"></i>焦虑 </p>
+								</td>
+								<td>15%</td>
+							  </tr>
+							  <tr>
+								<td>
+								  <p><i class="fa fa-square red"></i>恐慌 </p>
+								</td>
+								<td>30%</td>
+							  </tr>
+							</table>
+						  </td>
+						</tr>
+					  </table>
+					</div>
+				  </div>
+				</div>
+						  
+			  <div class="col-md-4 col-sm-4 ">
+			    <div class="x_panel tile fixed_height_320">
+			      <div class="x_title">
+			        <h2>多模匹配</h2>
+			        <ul class="nav navbar-right panel_toolbox">
+			          <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+			          </li>
+			          <li class="dropdown">
+			            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+			            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			                <a class="dropdown-item" href="#">Settings 1</a>
+			                <a class="dropdown-item" href="#">Settings 2</a>
+			              </div>
+			          </li>
+			          <li><a class="close-link"><i class="fa fa-close"></i></a>
+			          </li>
+			        </ul>
+			        <div class="clearfix"></div>
+			      </div>
+			      <div class="x_content">
+			        <div class="widget_summary">
+			          <div class="w_left w_25">
+			            <span>脑电&眼动</span>
+			          </div>
+			          <div class="w_center w_55">
+			            <div class="progress">
+			              <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
+			                <span class="sr-only">60% Complete</span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="w_right w_20">
+			            <span>81例</span>
+			          </div>
+			          <div class="clearfix"></div>
+			        </div>
+			
+			        <div class="widget_summary">
+			          <div class="w_left w_25">
+			            <span>脑电&语音</span>
+			          </div>
+			          <div class="w_center w_55">
+			            <div class="progress">
+			              <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
+			                <span class="sr-only">60% Complete</span>
+			              </div>
+			            </div>
+			          </div>
+			          <div class="w_right w_20">
+			            <span>89例</span>
+			          </div>
+			          <div class="clearfix"></div>
+			        </div>
+					
+					<div class="widget_summary">
+					  <div class="w_left w_25">
+					    <span>眼动&语音</span>
+					  </div>
+					  <div class="w_center w_55">
+					    <div class="progress">
+					      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
+					        <span class="sr-only">60% Complete</span>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="w_right w_20">
+					    <span>89例</span>
+					  </div>
+					  <div class="clearfix"></div>
+					</div>
+					
+					<div class="widget_summary">
+					  <div class="w_left w_25">
+					    <span>脑电&眼动&语音</span>
+					  </div>
+					  <div class="w_center w_55">
+					    <div class="progress">
+					      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+					        <span class="sr-only">60% Complete</span>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="w_right w_20">
+					    <span>70例</span>
+					  </div>
+					  <div class="clearfix"></div>
+					</div>
+					
+			      </div>
+			    </div>
+			  </div>
+			
+			
+			  <div class="col-md-4 col-sm-4 ">
+			    <div class="x_panel tile fixed_height_320">
+			      <div class="x_title">
+			        <h2>质量情况</h2>
+			        <ul class="nav navbar-right panel_toolbox">
+			          <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+			          </li>
+			          <li class="dropdown">
+			            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+			            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			                <a class="dropdown-item" href="#">Settings 1</a>
+			                <a class="dropdown-item" href="#">Settings 2</a>
+			              </div>
+			          </li>
+			          <li><a class="close-link"><i class="fa fa-close"></i></a>
+			          </li>
+			        </ul>
+			        <div class="clearfix"></div>
+			      </div>
+			      <div class="x_content">
+			        <div class="dashboard-widget-content">
+			          <ul class="quick-list">
+			            <li><i class="fa fa-calendar-o"></i><a href="#">脑电有效率</a>
+			            </li>
+			            <li><i class="fa fa-bars"></i><a href="#">眼动有效率</a>
+			            </li>
+			            <li><i class="fa fa-bar-chart"></i><a href="#">语音有效率</a> </li>
+			            <li><i class="fa fa-line-chart"></i><a href="#">近红外有效率</a>
+			            </li>
+			            <li><i class="fa fa-bar-chart"></i><a href="#">VR脑电有效率</a> </li>
+			            <li><i class="fa fa-line-chart"></i><a href="#">步态有效率</a>
+			            </li>
+			            <li><i class="fa fa-area-chart"></i><a href="#">量表缺失情况</a>
+			            </li>
+			          </ul>
+			
+			          <div class="sidebar-widget">
+			              <h4>Profile Completion</h4>
+			              <canvas width="150" height="80" id="chart_gauge_01" class="" style="width: 160px; height: 100px;"></canvas>
+			              <div class="goal-wrapper">
+			                <span id="gauge-text" class="gauge-value pull-left">0</span>
+			                <span class="gauge-value pull-left">%</span>
+			                <span id="goal-text" class="goal-value pull-right">100%</span>
+			              </div>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			
+			</div>
+			
+			
+           				
+            <div class="row">
+              <div class="col-md-4">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>脑电 <small>范式描述</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Settings 1</a>
+                            <a class="dropdown-item" href="#">Settings 2</a>
+                          </div>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <article class="media event">
+                      <a class="pull-left date">
+                        <p class="month">脑电</p>
+                        <p class="month">EEG</p>
+                      </a>
+                      <div class="media-body">
+                        <a class="title" href="#">采集设备</a>
+                        <p>Neuroscan128导 湿电极.</p>
+						<a class="title" href="#">范式设计</a>
+						<p>5min睁眼静息，5min闭眼静息和144s闭眼音频刺激（分别是正性，负性，中性）.</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>语音 <small>范式描述</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Settings 1</a>
+                            <a class="dropdown-item" href="#">Settings 2</a>
+                          </div>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <article class="media event">
+                      <a class="pull-left date">
+                        <p class="month">语音</p>
+                        <p class="month">audio</p>
+                      </a>
+                      <div class="media-body">
+                        <a class="title" href="#">采集设备</a>
+                        <p>语音：铁三角AT4047/SV（麦克风）、罗兰UA55（声卡） 视频：罗技CC3000E.</p>
+                    	<a class="title" href="#">范式设计</a>
+                    	<p>军口第三范式（13个访谈和6个朗读）.</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>VR脑电  <small>范式描述</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Settings 1</a>
+                            <a class="dropdown-item" href="#">Settings 2</a>
+                          </div>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+						<article class="media event">
+						  <a class="pull-left date">
+						    <p class="month">VR</p>
+						  </a>
+						  <div class="media-body">
+						    <a class="title" href="#">采集设备</a>
+						    <p>VR头盔三导.</p>
+							<a class="title" href="#">范式设计</a>
+							<p>音频刺激.</p>
+						  </div>
+						</article>
+                  </div>
+                </div>
+              </div>
+			  
+              <div class="col-md-4">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>眼动<small>范式描述</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Settings 1</a>
+                            <a class="dropdown-item" href="#">Settings 2</a>
+                          </div>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    
+					<article class="media event">
+					  <a class="pull-left date">
+					    <p class="month">眼动</p>
+					    <p class="month">eye</p>
+					  </a>
+					  <div class="media-body">
+					    <a class="title" href="#">采集设备</a>
+					    <p>VR头盔摄像头.</p>
+						<a class="title" href="#">范式一设计</a>
+						<p>眼动三段视频范式，分三段场景三个视频.</p>
+						<a class="title" href="#">范式二设计</a>
+						<p>眼动一段视频范式，三段场景一个视频.</p>
+					  </div>
+					</article>
+                  </div>
+                </div>
+              </div>
+			  <div class="col-md-4">
+			      <div class="x_panel">
+			        <div class="x_title">
+			          <h2>近红外 <small>范式描述</small></h2>
+			          <ul class="nav navbar-right panel_toolbox">
+			            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+			            </li>
+			            <li class="dropdown">
+			              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+			              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			                  <a class="dropdown-item" href="#">Settings 1</a>
+			                  <a class="dropdown-item" href="#">Settings 2</a>
+			                </div>
+			            </li>
+			            <li><a class="close-link"><i class="fa fa-close"></i></a>
+			            </li>
+			          </ul>
+			          <div class="clearfix"></div>
+			        </div>
+			        <div class="x_content">
+			          <article class="media event">
+			            <a class="pull-left date">
+			              <p class="month">近红外</p>
+			            </a>
+			            <div class="media-body">
+			              <a class="title" href="#">采集设备</a>
+			              <p>NIRScout 台式近红外成像系统.</p>
+			          	<a class="title" href="#">范式一设计</a>
+			          	<p>近红外范式Ⅰ.</p>
+			  			<a class="title" href="#">范式二设计</a>
+			  			<p>近红外范式Ⅱ.</p>
+			            </div>
+			          </article>
+			        </div>
+			      </div>
+			    </div>
+
+			  <div class="col-md-4">
+			      <div class="x_panel">
+			        <div class="x_title">
+			          <h2>负责人 <small>质量检查</small></h2>
+			          <ul class="nav navbar-right panel_toolbox">
+			            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+			            </li>
+			            <li class="dropdown">
+			              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+			              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			                  <a class="dropdown-item" href="#">Settings 1</a>
+			                  <a class="dropdown-item" href="#">Settings 2</a>
+			                </div>
+			            </li>
+			            <li><a class="close-link"><i class="fa fa-close"></i></a>
+			            </li>
+			          </ul>
+			          <div class="clearfix"></div>
+			        </div>
+			        <div class="x_content">
+			          <article class="media event">
+			            <a class="pull-left date">
+			              <p class="month" >近红外</p>
+			            </a>
+			            <div class="media-body">
+			              <a class="title" href="#">脑电检查</a>
+			              <p>梁晓哲</p>
+			          	<a class="title" href="#">语音检查</a>
+			          	<p>王东煜</p>
+			  			<a class="title" href="#">眼动检查</a>
+			  			<p>张威</p>
+			            </div>
+			          </article>
+			        </div>
+			      </div>
+			    </div>
+			  
+			</div>
+          
+		    <div class="col-md-12 col-sm-12 ">
+		        <div class="x_panel">
+		          <div class="x_title">
+		            <h2>被试数据情况表 <small>天水三院</small></h2>
+		            <ul class="nav navbar-right panel_toolbox">
+		              <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+		              </li>
+		              <li class="dropdown">
+		                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+		                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		                    <a class="dropdown-item" href="#">Settings 1</a>
+		                    <a class="dropdown-item" href="#">Settings 2</a>
+		                  </div>
+		              </li>
+		              <li><a class="close-link"><i class="fa fa-close"></i></a>
+		              </li>
+		            </ul>
+		            <div class="clearfix"></div>
+		          </div>
+		          <div class="x_content">
+		              <div class="row">
+		                  <div class="col-sm-12">
+		                    <div class="card-box table-responsive">
+		            <table id="datatable" class="table table-striped table-bordered" style="width:100%">
+		              <thead>
+		                <tr>
+		                  <th>被试编号</th>
+		                  <th>性别</th>
+		                  <th>年龄</th>
+		                  <th>脑电</th>
+		                  <th>语音</th>
+		    						<th>眼动</th>
+		    						<th>量表</th>
+		                </tr>
+		              </thead>
+		              <tbody>
+		                <tr>
+		                  <td>06031201</td>
+		                  <td>男</td>
+		                  <td>27</td>
+		                  <td>1</td>
+		                  <td>0</td>
+		                  <td>1</td>
+						  <td>1</td>
+		                </tr>
+						  <tr>
+							<td>06031210</td>
+							<td>女</td>
+							<td>27</td>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+							<td>1</td>
+						  </tr>
+						  <tr>
+							<td>06031221</td>
+							<td>男</td>
+							<td>38</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						  </tr>
+		              </tbody>
+		            </table>
+		          </div>
+		          </div>
+		      </div>
+		    </div>
+		        </div>
+		      </div>
+		    
+		  
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            UAIS数据集统计平台 by <a href="https://colorlib.com">杨正武&丛朝阳</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+   <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- jQuery Sparklines -->
+    <script src="../vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- Datatables -->
+    <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="../vendors/jszip/dist/jszip.min.js"></script>
+    <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+	<!-- Chart.js -->
+	<script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+	<!-- gauge.js -->
+	<script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+	<!-- bootstrap-progressbar -->
+	<script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+	<!-- iCheck -->
+	<script src="../vendors/iCheck/icheck.min.js"></script>
+	<!-- Skycons -->
+	<script src="../vendors/skycons/skycons.js"></script>
+	<!-- Flot -->
+	<script src="../vendors/Flot/jquery.flot.js"></script>
+	<script src="../vendors/Flot/jquery.flot.pie.js"></script>
+	<script src="../vendors/Flot/jquery.flot.time.js"></script>
+	<script src="../vendors/Flot/jquery.flot.stack.js"></script>
+	<script src="../vendors/Flot/jquery.flot.resize.js"></script>
+	<!-- Flot plugins -->
+	<script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+	<script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+	<script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+	<!-- DateJS -->
+	<script src="../vendors/DateJS/build/date.js"></script>
+	<!-- JQVMap -->
+	<script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+	<script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+	<script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+	<!-- bootstrap-daterangepicker -->
+	<script src="../vendors/moment/min/moment.min.js"></script>
+	<script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+  </body>
+</html>
